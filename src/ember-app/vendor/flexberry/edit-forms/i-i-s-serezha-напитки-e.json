@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "продукты",
+      "displayAttributeName": "наименование",
+      "required": true,
+      "relationName": "СоставНапитков.Продукты",
+      "projection": "ПродуктыL",
+      "detailModelName": "i-i-s-serezha-состав-напитков"
+    }
+  ],
+  "external": false,
+  "caption": "Напитки",
+  "name": "IISSerezhaНапиткиE",
+  "className": "НапиткиE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-serezha-напитки",
+      "modelProjection": "НапиткиE"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+﻿{
+  "applicationCaption": "Serezha",
+  "applicationTitle": "Serezha",
+  "items": [
+    {
+      "link": null,
+      "menuName": "сотрудники",
+      "caption": "Сотрудники",
+      "title": "Сотрудники",
+      "children": [
+        {
+          "link": "i-i-s-serezha-должности-l",
+          "menuName": null,
+          "caption": "Должности",
+          "title": "Должности",
+          "children": null
+        },
+        {
+          "link": "i-i-s-serezha-сотрудник-l",
+          "menuName": null,
+          "caption": "Сотрудник",
+          "title": "Сотрудник",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "наши-клиенты",
+      "caption": "Наши клиенты",
+      "title": "Наши клиенты",
+      "children": [
+        {
+          "link": "i-i-s-serezha-клиенты-l",
+          "menuName": null,
+          "caption": "Клиенты",
+          "title": "Клиенты",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "меню-ресторана",
+      "caption": "Меню ресторана",
+      "title": "Меню ресторана",
+      "children": [
+        {
+          "link": "i-i-s-serezha-блюда-l",
+          "menuName": null,
+          "caption": "Блюда",
+          "title": "Блюда",
+          "children": null
+        },
+        {
+          "link": "i-i-s-serezha-напитки-l",
+          "menuName": null,
+          "caption": "Напитки",
+          "title": "Напитки",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "заказы",
+      "caption": "Заказы",
+      "title": "Заказы",
+      "children": [
+        {
+          "link": "i-i-s-serezha-заказы-l",
+          "menuName": null,
+          "caption": "Заказы",
+          "title": "Заказы",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "номера-и-продукты",
+      "caption": "Номера и продукты",
+      "title": "Номера и продукты",
+      "children": [
+        {
+          "link": "i-i-s-serezha-продукты-l",
+          "menuName": null,
+          "caption": "Продукты",
+          "title": "Продукты",
+          "children": null
+        },
+        {
+          "link": "i-i-s-serezha-номера-l",
+          "menuName": null,
+          "caption": "Номера",
+          "title": "Номера",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

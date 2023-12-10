@@ -1,0 +1,10 @@
+﻿{
+  "nameSpace": "IIS.Serezha",
+  "className": "Единицы",
+  "enumObjects": {
+    "1": "Грамм",
+    "2": "Л",
+    "3": "Мл",
+    "4": "Шт"
+  }
+}

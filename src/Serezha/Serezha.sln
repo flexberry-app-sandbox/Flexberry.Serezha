@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serezha.Objects", "Objects/Serezha.Objects.csproj", "46d9da94-6f8f-485f-92c0-6b9d33f9ce64"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serezha.Tests", "Tests/Serezha.Tests.csproj", "d5a79672-8362-4f52-a343-6ad66b99f8db"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serezha.ODataBackend", "ODataBackend/Serezha.ODataBackend.csproj", "4847cd1f-3c2a-4a59-aeb8-a8474a40f844"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serezha.IntegrationTests", "IntegrationTests/Serezha.IntegrationTests.csproj", "be2fd130-2d08-4179-bd7c-0a860dee600c"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+Debug|Any CPU = Debug|Any CPU
+Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		46d9da94-6f8f-485f-92c0-6b9d33f9ce64.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		46d9da94-6f8f-485f-92c0-6b9d33f9ce64.Debug|Any CPU.Build.0 = Debug|Any CPU
+		46d9da94-6f8f-485f-92c0-6b9d33f9ce64.Release|Any CPU.ActiveCfg = Release|Any CPU
+		46d9da94-6f8f-485f-92c0-6b9d33f9ce64.Release|Any CPU.Build.0 = Release|Any CPU
+		d5a79672-8362-4f52-a343-6ad66b99f8db.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		d5a79672-8362-4f52-a343-6ad66b99f8db.Debug|Any CPU.Build.0 = Debug|Any CPU
+		d5a79672-8362-4f52-a343-6ad66b99f8db.Release|Any CPU.ActiveCfg = Release|Any CPU
+		d5a79672-8362-4f52-a343-6ad66b99f8db.Release|Any CPU.Build.0 = Release|Any CPU
+		4847cd1f-3c2a-4a59-aeb8-a8474a40f844.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		4847cd1f-3c2a-4a59-aeb8-a8474a40f844.Debug|Any CPU.Build.0 = Debug|Any CPU
+		4847cd1f-3c2a-4a59-aeb8-a8474a40f844.Release|Any CPU.ActiveCfg = Release|Any CPU
+		4847cd1f-3c2a-4a59-aeb8-a8474a40f844.Release|Any CPU.Build.0 = Release|Any CPU
+		be2fd130-2d08-4179-bd7c-0a860dee600c.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		be2fd130-2d08-4179-bd7c-0a860dee600c.Debug|Any CPU.Build.0 = Debug|Any CPU
+		be2fd130-2d08-4179-bd7c-0a860dee600c.Release|Any CPU.ActiveCfg = Release|Any CPU
+		be2fd130-2d08-4179-bd7c-0a860dee600c.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

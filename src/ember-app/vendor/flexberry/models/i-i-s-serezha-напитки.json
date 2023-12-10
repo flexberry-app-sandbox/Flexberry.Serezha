@@ -1,0 +1,110 @@
+﻿{
+  "name": "IISSerezhaНапитки",
+  "modelName": "i-i-s-serezha-напитки",
+  "className": "Напитки",
+  "nameSpace": "IIS.Serezha",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "кодНапитка",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "стоимость",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "составНапитков",
+      "relatedTo": "i-i-s-serezha-состав-напитков",
+      "inverse": "напитки"
+    }
+  ],
+  "projections": [
+    {
+      "name": "НапиткиE",
+      "modelName": "i-i-s-serezha-напитки",
+      "attrs": [
+        {
+          "name": "кодНапитка",
+          "caption": "Код напитка",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "стоимость",
+          "caption": "Стоимость",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "СоставНапитковE",
+          "caption": "Состав напитков",
+          "name": "составНапитков",
+          "relatedTo": "i-i-s-serezha-состав-напитков",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "НапиткиL",
+      "modelName": "i-i-s-serezha-напитки",
+      "attrs": [
+        {
+          "name": "кодНапитка",
+          "caption": "Код напитка",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "стоимость",
+          "caption": "Стоимость",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,135 @@
+<h3 class="ui header">{{t "forms.i-i-s-serezha-заказы-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.кодЗаказа
+      class=(if (v-get validationModel "кодЗаказа" "isInvalid") "error")
+      label=(t "forms.i-i-s-serezha-заказы-e.кодЗаказа-caption")
+      data-test-i-i-s-serezha-заказы-e-кодЗаказа=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "кодЗаказа" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.датаИВремя
+      class=(if (v-get validationModel "датаИВремя" "isInvalid") "error")
+      label=(t "forms.i-i-s-serezha-заказы-e.датаИВремя-caption")
+      data-test-i-i-s-serezha-заказы-e-датаИВремя=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаИВремя" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-serezha-заказы-e-типОплаты="true">
+    <label>{{t "forms.i-i-s-serezha-заказы-e.типОплаты-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-serezha-тип-оплаты")
+      value=model.типОплаты
+      class=(if (v-get validationModel "типОплаты" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "типОплаты" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-serezha-заказы-e-типВручения="true">
+    <label>{{t "forms.i-i-s-serezha-заказы-e.типВручения-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-serezha-тип-вручения")
+      value=model.типВручения
+      class=(if (v-get validationModel "типВручения" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "типВручения" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-serezha-заказы-e.номера-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.номера
+      displayAttributeName="номерКомнаты"
+      autocomplete=true
+      relationName="номера"
+      projection="НомераL"
+      title=(t "forms.i-i-s-serezha-заказы-e.номера-caption")
+      readonly=readonly
+      componentName="номераLookup"
+      class=(if (v-get validationModel "номера" "isInvalid") "error")
+      data-test-i-i-s-serezha-заказы-e-номера=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номера" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-serezha-заказы-e.сотрудник-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.сотрудник
+      displayAttributeName="фамилия"
+      autocomplete=true
+      relationName="сотрудник"
+      projection="СотрудникL"
+      title=(t "forms.i-i-s-serezha-заказы-e.сотрудник-caption")
+      readonly=readonly
+      componentName="сотрудникLookup"
+      class=(if (v-get validationModel "сотрудник" "isInvalid") "error")
+      data-test-i-i-s-serezha-заказы-e-сотрудник=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "сотрудник" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-serezha-заказы-e.клиенты-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.клиенты
+      displayAttributeName="фамилия"
+      autocomplete=true
+      relationName="клиенты"
+      projection="КлиентыL"
+      title=(t "forms.i-i-s-serezha-заказы-e.клиенты-caption")
+      readonly=readonly
+      componentName="клиентыLookup"
+      class=(if (v-get validationModel "клиенты" "isInvalid") "error")
+      data-test-i-i-s-serezha-заказы-e-клиенты=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "клиенты" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-serezha-заказы-e.составЗаказа-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="составЗаказаGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.составЗаказа
+      content=model.составЗаказа
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "составЗаказа" "isInvalid") "error")
+      data-test-i-i-s-serezha-заказы-e-составЗаказа=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "составЗаказа" "message")}}
+  </div>
+</form>

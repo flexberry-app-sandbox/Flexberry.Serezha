@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-serezha-клиенты-e",
+  "editForm": "i-i-s-serezha-клиенты-e",
+  "external": false,
+  "caption": "Клиенты",
+  "name": "IISSerezhaКлиентыL",
+  "className": "КлиентыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-serezha-клиенты",
+      "modelProjection": "КлиентыL"
+    }
+  ]
+}

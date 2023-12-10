@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-serezha-должности-e",
+  "editForm": "i-i-s-serezha-должности-e",
+  "external": false,
+  "caption": "Должности",
+  "name": "IISSerezhaДолжностиL",
+  "className": "ДолжностиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-serezha-должности",
+      "modelProjection": "ДолжностиL"
+    }
+  ]
+}

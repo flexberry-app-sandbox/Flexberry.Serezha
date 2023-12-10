@@ -1,0 +1,55 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Номера",
+      "projection": "НомераL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудник",
+      "projection": "СотрудникL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Клиенты",
+      "projection": "КлиентыL",
+      "detailModelName": null
+    },
+    {
+      "master": "напитки",
+      "displayAttributeName": "наименование",
+      "required": true,
+      "relationName": "СоставЗаказа.Напитки",
+      "projection": "НапиткиL",
+      "detailModelName": "i-i-s-serezha-состав-заказа"
+    },
+    {
+      "master": "блюда",
+      "displayAttributeName": "наименование",
+      "required": true,
+      "relationName": "СоставЗаказа.Блюда",
+      "projection": "БлюдаL",
+      "detailModelName": "i-i-s-serezha-состав-заказа"
+    }
+  ],
+  "external": false,
+  "caption": "Заказы",
+  "name": "IISSerezhaЗаказыE",
+  "className": "ЗаказыE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-serezha-заказы",
+      "modelProjection": "ЗаказыE"
+    }
+  ]
+}

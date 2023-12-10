@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-serezha-блюда-e",
+  "editForm": "i-i-s-serezha-блюда-e",
+  "external": false,
+  "caption": "Блюда",
+  "name": "IISSerezhaБлюдаL",
+  "className": "БлюдаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-serezha-блюда",
+      "modelProjection": "БлюдаL"
+    }
+  ]
+}

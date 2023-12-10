@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-serezha-продукты-e",
+  "editForm": "i-i-s-serezha-продукты-e",
+  "external": false,
+  "caption": "Продукты",
+  "name": "IISSerezhaПродуктыL",
+  "className": "ПродуктыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-serezha-продукты",
+      "modelProjection": "ПродуктыL"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "продукты",
+      "displayAttributeName": "наименование",
+      "required": true,
+      "relationName": "СоставБлюда.Продукты",
+      "projection": "ПродуктыL",
+      "detailModelName": "i-i-s-serezha-состав-блюда"
+    }
+  ],
+  "external": false,
+  "caption": "Блюда",
+  "name": "IISSerezhaБлюдаE",
+  "className": "БлюдаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-serezha-блюда",
+      "modelProjection": "БлюдаE"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Продукты",
+  "name": "IISSerezhaПродуктыE",
+  "className": "ПродуктыE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-serezha-продукты",
+      "modelProjection": "ПродуктыE"
+    }
+  ]
+}

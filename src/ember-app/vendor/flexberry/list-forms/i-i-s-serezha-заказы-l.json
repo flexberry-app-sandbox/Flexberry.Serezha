@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-serezha-заказы-e",
+  "editForm": "i-i-s-serezha-заказы-e",
+  "external": false,
+  "caption": "Заказы",
+  "name": "IISSerezhaЗаказыL",
+  "className": "ЗаказыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-serezha-заказы",
+      "modelProjection": "ЗаказыL"
+    }
+  ]
+}

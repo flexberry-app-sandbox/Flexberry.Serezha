@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Номера",
+  "name": "IISSerezhaНомераE",
+  "className": "НомераE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-serezha-номера",
+      "modelProjection": "НомераE"
+    }
+  ]
+}

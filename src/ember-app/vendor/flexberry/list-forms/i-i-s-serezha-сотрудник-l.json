@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-serezha-сотрудник-e",
+  "editForm": "i-i-s-serezha-сотрудник-e",
+  "external": false,
+  "caption": "Сотрудник",
+  "name": "IISSerezhaСотрудникL",
+  "className": "СотрудникL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-serezha-сотрудник",
+      "modelProjection": "СотрудникL"
+    }
+  ]
+}
